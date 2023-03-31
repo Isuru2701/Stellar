@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+
+
+#line {
+    animation-name: line-extend;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    width: 1px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top:50%;
+    left: 0;
+}
+
+@keyframes line-extend {
+    from {width:0;}
+    to {width:80%; }
+}
