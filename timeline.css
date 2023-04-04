@@ -4,16 +4,16 @@ body {
 
 
 .line {
-    animation-name: line-extend;
+    /* animation-name: line-extend;
     animation-duration: 1s;
     animation-delay: 0.5s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
     width: 2px;
     background-color: white;
     position: absolute;
     float:left;
     top: auto;
-    height: 0;
+    height: 100px;
     left: 3%;
 }
 
@@ -26,7 +26,6 @@ body {
     top:auto;
     width: fit-content;
     height: fit-content;
-    
     overflow: hidden;
     display: flex;
     float: left;
@@ -51,6 +50,7 @@ body {
     background-color: #333;
     width: 100px;
     height: 100px;
+    overflow: hidden;
 }
 
 
