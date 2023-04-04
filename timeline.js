@@ -32,11 +32,6 @@ circle will be a square div with the circle pattern.
 //later it'll be retrieved from the database.
 
 for(let i = 0; i < 10; i++){
-
-    const line = document.createElement("div");
-    line.className = 'line';
-    document.getElementById('container').appendChild(line);
-
     //add a node
     const node = document.createElement("div");
     node.className = 'node';
