@@ -3,29 +3,60 @@ body {
 }
 
 
-#line {
+.line {
     animation-name: line-extend;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
     width: 2px;
     background-color: white;
     position: absolute;
-    top:0;
+    float:left;
+    top: auto;
+    height: 0;
     left: 3%;
 }
 
 @keyframes line-extend {
-    from {height:0;}
     to {height:10%; }
 }
 
 
 .node {
+    top:auto;
+    width: fit-content;
+    height: fit-content;
+    
+    overflow: hidden;
+    display: flex;
+    float: left;
+}
+
+
+
+.title {
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    vertical-align: middle;
+}
+
+.circle {
+    border-color: white;
+    border-style: solid;
+    border-radius:  100%;
+    background-color: #333;
     width: 100px;
-  height: 55px;
-  background-color: #333;
-  position: relative;
-  margin: 50px auto;
-  overflow: hidden;
+    height: 100px;
+}
+
+
+
+
+#container {
+    display: grid;
+    max-height: fit-content;
 }

@@ -10,13 +10,13 @@ These nodes must be added by an admin. (TODO: check session ID, and generate '+'
 They will be stored in a database, and will be retrieved to the client-side.
 
 The structure of the node is as such:
-<hexagon><img/></hexagon> <title>
+<circle><img/></circle> <title>
 
 this entire construct is a div, with the class 'node'.
-the hexagon is a div inside it, and the img is a background image of this.
+the circle is a div inside it, and the img is a background image of this.
 
 <div class='node'>
-    <div class='hexagon'>
+    <div class='circle'>
         <img src='img.png'/>
     </div>
     <p class='title'>title</p> 
@@ -24,15 +24,29 @@ the hexagon is a div inside it, and the img is a background image of this.
 
 
 
-
+circle will be a square div with the circle pattern.
 
 */
 
-//for now it'll add 10 nodes that I hardcoded. later it'll be retrieved from the database.
+//for now it'll add 10 nodes that I hardcoded.
+//later it'll be retrieved from the database.
 
 
-var node = document.createElement("div");
 
-node.className = 'node';
-node.html
-document.body.appendChild(node);
+
+
+
+for(let i = 0; i < 10; i++){
+
+    //add a line
+    const line = document.createElement("div");
+    line.className = 'line';
+    document.getElementById('container').appendChild(line);
+    
+
+    //add a node
+    const node = document.createElement("div");
+    node.className = 'node';
+    node.innerHTML = "<div class='circle'></div><p class='title'>title</p>"
+    document.getElementById('container').appendChild(node);
+}
