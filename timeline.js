@@ -31,17 +31,15 @@ circle will be a square div with the circle pattern.
 //for now it'll add 10 nodes that I hardcoded.
 //later it'll be retrieved from the database.
 
-
-
-
-
-
 for(let i = 0; i < 10; i++){
 
+    const line = document.createElement("div");
+    line.className = 'line';
+    document.getElementById('container').appendChild(line);
 
     //add a node
     const node = document.createElement("div");
     node.className = 'node';
-    node.innerHTML = "<div class='circle'><img src='https://cdn.discordapp.com/attachments/781101808243179550/1092606623668777061/IMG_20230404_064759.jpg' height=100px width=100px/></div><p class='title'>title</p><div class='line'></div>"
+    node.innerHTML = "<div class='circle'><img src='' height=100px width=100px alt='image'/></div><p class='title'>title</p>"
     document.getElementById('container').appendChild(node);
 }
