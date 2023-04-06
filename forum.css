@@ -1,8 +1,32 @@
-.body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap'); 
+
+*{
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+	
+}
+
+body {
     background-color: black;
 
 }
 
+h1 {
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: normal;
+    
+}
+
+hr {
+    color: #ffffffa9;
+    height: 1px;
+    width: 80%;
+    align-content: center;
+
+}
 
 /*font styles*/
 .title {
@@ -25,5 +49,4 @@
     font-size: small;
     font-weight: lighter;
     font-style: italic;
-
 }
