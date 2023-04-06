@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/eberhard-grossgasteiger-cs0sK0gzqCU-unsplash.jpg);
+    background-size: 1600px 100%;
+    /* background: #223243; */
+}
+
+.container{
+    padding: 40px;
+    border-radius: 20px;
+    border: 8px;
+    box-shadow: -5px -5px 15px purple,
+    5px 5px 15px palevioletred,
+    inset -5px -5px 15px purple,
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.container .form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.container .form h2{
+  margin-top: 15px;
+	font-size: 2em;
+	color: whitesmoke;
+	text-align: center;
+    /* color: #fff;
+   font-weight: 500;
+   letter-spacing: 0.1em; */
+}
+
+.container .form .input-box{
+    position: relative;
+    width: 300px;
+}
+
+.container .form .input-box input{
+    padding: 12px 10px 12px 48px;
+    border: none;
+    width: 100%;
+    /* background: #223243; */
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-weight: 300;
+    border-radius: 25px;
+    font-size: 1em;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+    transition: 0.5s;
+    outline: none;
+}
+
+.container .form .input-box span{
+  position: absolute;
+  left: 0;
+  padding: 12px 10px 12px 48px;
+  pointer-events: none;
+  font-size: 1em;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 0.05em;
+  color: whitesmoke;
+}
+
+.container .form .input-box input:valid ~ span,
+.container .form .input-box input:focus ~ span{
+   color: #0ef;
+   border: 1px solid #0ef;
+   background: #223243;
+   transform: translateX(25px) translateY(-7px);
+   font-size: 0.6em;
+   padding: 0 8px;
+   border-radius: 10px;
+   letter-spacing: 0.1em;
+}
+
+.container .form .input-box input:valid,
+.container .form .input-box input:focus{
+  border: 1px solid #0ef;
+}
+
+.container .form .input-box i{
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 25px;
+  padding: 2px 0;
+  padding-right: 8px;
+  color: #0ef;
+  border-right: 1px solid #0ef;
+}
+
+.container .form .input-box input[type="submit"]{
+ background: linear-gradient(purple,palevioletred);
+ color: #fff;
+ padding: 10px 0;
+ font-weight: 500;
+ border: #fff;
+ cursor: pointer;
+ box-shadow: 0 0 5px purple,0 0 25px palevioletred;
+    
+}
+
+.container .form .input-box input[type="submit"]:hover {
+    box-shadow: 0 0 5px purple,
+    0 0 25px palevioletred, 0 0 75px palevioletred;
+  }
+
+.container .form p{
+    color: whitesmoke;
+    font-size: 0.75em;
+    font-weight: 300;
+}
+
+.container .form p a{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.container .form p a:hover{
+  text-decoration: underline;
+}
