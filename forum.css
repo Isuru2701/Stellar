@@ -1,0 +1,29 @@
+.body {
+    background-color: black;
+
+}
+
+
+/*font styles*/
+.title {
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.content {
+    color: #ffffff;
+    font-size: medium;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.comment {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: small;
+    font-weight: lighter;
+    font-style: italic;
+
+}
