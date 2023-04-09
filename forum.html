@@ -4,11 +4,13 @@
 
     A forum to discuss space-related topics.
     Users can make entries to the forum.
-    Entries can be classified as questions, discussions, or articles.
+    Entries can be tagged as questions, discussions, or aritcle.
     Users can comment on entries.
     Users can upvote or downvote entries and comments.
     Admins can delete any entry or comment.
     Users can edit/delete their own entries and comments.
+    Clicking on an entry will expand it to reveal the contents.
+
     
 
 
@@ -21,15 +23,43 @@
     </head>
     
     <body>
-        <header><center><h1>Stellar Forum</h1></center></header>
+        <header>
+            <h1 style="text-align: center;">Stellar Forum</h1>
+        
+        </header>
         <hr>
 
+        <!--TODO: Add a 'create new post' button-->
         
+        <!--contains all the entries within-->
+        <div class="container"> 
+        
+            <!--example entry-->
+            <div class="entry"> 
+            <!--the icon will have one of 3 pictures, each for question, discussion, and article-->
+                <div class="icon"> 
 
-        <div class="container">
-        <div class="entry">
-            <div class="title"></div>
-        </div>
+                </div>
+                <div class="title">
+
+                </div>
+                <div class="content">
+
+                </div>
+
+                <!--comment box will hold all the comments-->
+                <div class="comment-box"> 
+                    <div class="comment">
+                        <img class="comment-icon"/>
+                        <div class="comment-content">
+
+                        </div>
+                        <div class="comment-author">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
