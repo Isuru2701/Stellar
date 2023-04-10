@@ -28,6 +28,12 @@ hr {
 
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
 /*button styles*/
 .collapse {
     background-color: transparent;
@@ -44,29 +50,51 @@ hr {
 
 
 
-/*div styles*/
+/*div & span styles*/
 .container {
-    margin: 20px;
+ 
+    margin-left: 20px;
     padding: 20px;
     display: grid;
     grid-row: 1;
 
     color: #ffffff;
+    
 }
 
 .entry {
-    display: inline-flex;
-    border: #ffffff;
+    display: grid;
+    grid-template-columns: 20% 30% 20% 15% 5%;
+    border: purple;
     border-style: solid;
     border-width: 1px;
     border-radius: 20px;
     height: 100px;
-    width: 500px;
+    width: 900px;
     margin: 10px;
     
 }
 
+.icon {
 
+    width:100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.title p{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.author-pfp {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+}
 
 /*text styles*/
 .title {
