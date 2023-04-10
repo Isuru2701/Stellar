@@ -28,6 +28,44 @@ hr {
 
 }
 
+/*button styles*/
+.collapse {
+    background-color: transparent;
+    text-align: center;
+    color: #cccccc;
+    
+
+
+}
+
+.active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+
+
+/*div styles*/
+.container {
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-row: 1;
+
+    color: #ffffff;
+}
+
+.entry {
+    display: inline-flex;
+    border: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    height: 100px;
+    width: 500px;
+    margin: 10px;
+    
+}
+
 
 
 /*text styles*/
