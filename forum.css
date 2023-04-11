@@ -23,7 +23,7 @@ h1 {
 hr {
     color: #ffffffa9;
     height: 1px;
-    width: 80%;
+    width: 100%;
     align-content: center;
 
 }
@@ -33,45 +33,40 @@ img {
     max-height: 100%;
 }
 
-
-/*button styles*/
-.collapse {
-    background-color: transparent;
-    text-align: center;
-    color: #cccccc;
-    
-
-
+a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
-.active, .collapsible:hover {
-    background-color: #ccc;
-  }
 
-
+.navbar {
+    display: grid;
+    grid-template-columns: 30% 20% 20% 20% 10%;
+}
 
 /*div & span styles*/
 .container {
- 
-    margin-left: 20px;
+    
+    margin-left: 10%;
     padding: 20px;
-    display: grid;
-    grid-row: 1;
-
+    display: inline-flex;
     color: #ffffff;
+
     
 }
 
 .entry {
     display: grid;
-    grid-template-columns: 20% 30% 20% 15% 5%;
+    grid-template-columns: 10% 40% 20% 15% 5%;
     border: purple;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-radius: 20px;
-    height: 100px;
-    width: 900px;
-    margin: 10px;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    /*gradient that goes  from transparent to purple*/
+    background: linear-gradient(125deg, transparent, transparent, purple);
     
 }
 
@@ -84,9 +79,11 @@ img {
 
 .title p{
     color: #ffffff;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     text-align: left;
+    margin-top: 5%;
+    margin-left: 5%;
 
 }
 

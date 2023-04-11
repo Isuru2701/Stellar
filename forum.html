@@ -2,14 +2,12 @@
 
 <!--
 
-    A forum to discuss space-related topics.
-    Users can make entries to the forum.
-    Entries can be tagged as questions, discussions, or aritcle.
-    Users can comment on entries.
-    Users can upvote or downvote entries and comments.
+    A blog to post space-related topics.
+    admins can make entries to the forum.
+    Users can comment on posts.
     Admins can delete any entry or comment.
-    Users can edit/delete their own entries and comments.
-    Clicking on an entry will expand it to reveal the contents.
+
+    Clicking on a tile will redirect to a page where the content is rendered using the data in the db.
 
     
 
@@ -27,43 +25,29 @@
     </head>
     
     <body>
-        <header>
-            <h1 style="text-align: center;">Stellar Forum</h1>
-        
+        <header class="navbar">
+            <h1>Stellar</h1>
+            <a href="" style="margin-top: 30%;">Home</a>
+            <a href="" style="margin-top: 10%">Timeline</a>
+            <a href="" style="margin-top: 20%">Blog</a>
         </header>
+        <hr>
         <hr>
 
         <!--TODO: Add a 'create new post' button-->
         
         <!--contains all the entries within-->
+        <div class="container">
+           <div class="entry">
 
-        <div class="container"> 
-        
-            <!--entry contains the post. entry is a collapsible-->
-            <div class="entry"> 
+           </div> 
 
-            <!--the icon will have one of 3 pictures, each for question, discussion, and article-->
-                <span class="icon"> 
-                    <img src="question.png" alt="question" />
-                    
-                </span>
+           <div class="entry">
 
-                <span class="title">
-                    <p>Cool title</p>
-                </span>
-
-                <span class="author-pfp">
-                    <img src="https://images.newscientist.com/wp-content/uploads/2019/07/02111520/gettyimages-157639696.jpg" alt="author profile picture"/>
-                </span>
-                <span class="author-name">
-                    <p>Author Name</p>
-                </span>
-                <span>
-                    <button class="collapse" onclick=""> + </button> 
-                </span>
-            </div>
+           </div>
 
         </div>
+        
     </body>
 </html>
 
