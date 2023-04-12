@@ -121,7 +121,7 @@ canvas .particles-js-canvas-el {
     margin: 30px;
     overflow: hidden;
     /*gradient that goes  from transparent to purple*/
-    background: linear-gradient(125deg, rgb(25,25,25), rgb(25,25,25), purple);
+    background: linear-gradient(125deg, rgb(25,25,25), rgb(25,25,25), rgba(128, 0, 128, 0.736));
 }
 
 .icon {
