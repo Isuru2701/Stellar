@@ -50,7 +50,7 @@ a:hover {
 
 .navbar {
     display: grid;
-    grid-template-columns: 30% 20% 20% 20% 10%;
+    grid-template-columns: 30% 20% 20% 10% 3% 7% 10%;
     background-color: rgb(25, 25, 25);
 }
 
@@ -79,6 +79,15 @@ canvas .particles-js-canvas-el {
     z-index: 0;
     
 }
+
+#profile {
+    color: #ffffff;
+    width: 100px;
+    margin-top: 30px;
+    margin-right: 10px;
+    overflow: hidden;
+    display: inline;
+    }
 
 .entry {
     border: purple;
@@ -139,6 +148,7 @@ canvas .particles-js-canvas-el {
     background: linear-gradient(#ffffff, #ffffff, purple, transparent);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 /*comment styles*/
