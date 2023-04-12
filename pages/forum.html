@@ -19,6 +19,16 @@
     <meta charset="utf-8">
     <title>Forum</title>
     <link rel="stylesheet" href="../styles/forum.css">
+
+    <!--particle library-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('container', '../resources/particles.json', function() {
+            console.log('particles.js loaded');
+          });
+    </script>
+
+
 </head>
 
 
@@ -36,7 +46,7 @@
     <!--TODO: Add a 'create new post' button-->
 
     <!--contains all the entries within-->
-    <div class="container">
+    <div id="container">
 
         <div class="entry">
             <div class="title">Title</div>
