@@ -103,15 +103,18 @@ a {
     font-style: italic;
     margin: 30px;
     text-align: left;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 .content {
-    color: #ffffff;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
     margin: 30px;
+
+    background: linear-gradient(#ffffff, #ffffff, purple, transparent);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 /*comment styles*/
