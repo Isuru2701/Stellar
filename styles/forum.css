@@ -7,8 +7,11 @@
 	
 }
 
-body {
+body, html {
     background-color: rgb(25, 25, 25);
+    height: 100%;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -48,13 +51,20 @@ a {
 
 /*div & span styles*/
 #container {
-    
     margin-left: 10%;
     padding: 20px;
-    display: inline-block;
+    display: block;
     color: #ffffff; 
+    position: absolute;
+
 }
 
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    resize: vertical;
+}
 
 .entry {
     border: purple;
