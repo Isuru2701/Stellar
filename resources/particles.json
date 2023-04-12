@@ -1,7 +1,7 @@
 {
     "particles": {
       "number": {
-        "value": 120
+        "value": 200
       },
       "color": {
         "value": "#ffffff"
@@ -10,7 +10,7 @@
         "type": "circle"
       },
       "opacity": {
-        "value": 0.8,
+        "value": 1,
         "random": true
       },
       "size": {
@@ -29,12 +29,12 @@
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
-          "mode": "push"
+          "enable": false,
+          "mode": ""
         },
         "onclick": {
-          "enable": true,
-          "mode": "push"
+          "enable": false,
+          "mode": ""
         },
         "resize": true
       },
@@ -46,13 +46,13 @@
           }
         },
         "push": {
-          "particles_nb": 4
+          "particles_nb": 10
         }
       }
     },
     "life": {
         "duration": {
-          "sync": false,
+          "sync": true,
           "value": 0.4
         }
     },
