@@ -65,9 +65,9 @@ a {
     width: 500px;
     float: left;
     margin: 30px;
+    overflow: hidden;
     /*gradient that goes  from transparent to purple*/
     background: linear-gradient(125deg, transparent, transparent, purple);
-    
 }
 
 .icon {
@@ -96,11 +96,22 @@ a {
 
 }
 
+.info-bar {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    margin: 30px;
+    text-align: left;
+    margin-left: 5%;
+}
+
 .content {
     color: #ffffff;
-    font-size: medium;
+    font-size: 20px;
     font-weight: normal;
     font-style: normal;
+    margin: 30px;
 }
 
 /*comment styles*/
