@@ -157,7 +157,7 @@ canvas .particles-js-canvas-el {
     font-style: italic;
     margin: 30px;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .content {
@@ -170,19 +170,4 @@ canvas .particles-js-canvas-el {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-}
-
-/*comment styles*/
-.comment-box {
-    background-color: transparent;
-    color: #ababab;
-    font-style: italic;
-    font-weight: lighter;
-}
-
-.comment {
-    background-color: inherit;
-    color: inherit;
-    font-style: inherit;
-    
 }
