@@ -36,7 +36,7 @@
 
 		<div class="signup-link">
 			Create an account?
-			<a href="Signup.html"> Sign Up</a>
+			<a href="Signup.php"> Sign Up</a>
 		</div>
 
 		<div class="social-media">
