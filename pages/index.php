@@ -1,3 +1,4 @@
+<form action="signup.inc.php" method="POST">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,7 @@
 
 <div class="login-box">
 	<h2>Login</h2>
-	<form action="#">
+	<form action="login.inc.php" method="POST">
 		<div class="input-box">
 			<input type="email" name="email" required>
 			<label>Email</label>
