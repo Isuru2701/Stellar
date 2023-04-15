@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/forum.css">
     <link rel="stylesheet" href="../styles/create.css">
+
+    <link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
     <title>Create a blogpost</title>
 </head>
 <body>
@@ -23,8 +26,22 @@
         </div> 
         
     </header>
+    <hr>
 
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
+    <div id="editor">
+
+    </div>
+
+    <script>
+        var quill = new Quill('#editor', {
+          theme: 'snow'
+        });
+      </script>
+
+    <button id="submit">Post</button>
+    
     
 </body>
 </html>
