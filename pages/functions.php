@@ -100,6 +100,7 @@ function createUser($conn, $username, $email, $password)
      
      $hashedpwd = password_hash($password, PASSWORD_DEFAULT);
      mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedpwd);
+     mysqli_stmt_execute($stmt);
      mysqli_stmt_close($stmt);
      header("location:Signup.php?error=none");
     exit();
