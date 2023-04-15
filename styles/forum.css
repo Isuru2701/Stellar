@@ -133,10 +133,15 @@ canvas .particles-js-canvas-el {
 
 
 
-.author-pfp {
-    width: 150px;
-    height: 150px;
-    padding: 5px;
+.pfp {
+    margin-top:20px;
+    margin-left:30px;
+    width: 60px;
+    height:60px;
+    border: white;
+    border-style:solid;
+    border-width: 2px;
+    border-radius:10px;
 }
 
 /*text styles*/
@@ -157,7 +162,7 @@ canvas .particles-js-canvas-el {
     font-style: italic;
     margin: 30px;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .content {
@@ -170,19 +175,4 @@ canvas .particles-js-canvas-el {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-}
-
-/*comment styles*/
-.comment-box {
-    background-color: transparent;
-    color: #ababab;
-    font-style: italic;
-    font-weight: lighter;
-}
-
-.comment {
-    background-color: inherit;
-    color: inherit;
-    font-style: inherit;
-    
 }
