@@ -1,41 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap'); 
 
-*{
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins',sans-serif;
-	
-}
 
 body {
-    background-color: black;
+    background-color: #191919;
 }
-
-img {
-    text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
-}
-
-.line {
-    animation-name: line-extend;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-    width: 2px;
-    background-color: #ffffff;
-    position: absolute;
-    top: auto;
-    height: 0%;
-    left: 3%;
-    z-index: 1;
-}
-
-@keyframes line-extend {
-    to {height:104px; }
-}
-
-
 
 .node {
     top:auto;
@@ -51,13 +19,14 @@ img {
 
 
 .title {
-    font-size: 1.5em;
+    font-size: 35px;
     font-family: 'Courier New', Courier, monospace;
     color: white;
     text-align: center;
     padding-left: 10px;
     padding-top: 10px;
     vertical-align: middle;
+    margin-top: 50px;
 }
 
 .circle {
@@ -65,15 +34,15 @@ img {
     border-style: solid;
     border-radius:  100%;
     background-color: #333;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
 }
 
 
 #container {
-    display: grid;
+    display: inline;
     max-height: fit-content;
-    position: relative;
+    position: absolute;
     grid-column: 2;
 }
