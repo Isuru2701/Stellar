@@ -81,15 +81,6 @@ canvas .particles-js-canvas-el {
     
 }
 
-#profile {
-    color: #ffffff;
-    width: 120px;
-    margin-top: 30px;
-    margin-right: 10px;
-    display: inline;
-    overflow-wrap: break-word;
-}
-
 #add-post {
     margin-top: 30px;
     margin-left: 200px;
@@ -131,18 +122,6 @@ canvas .particles-js-canvas-el {
     padding: 10px;
 }
 
-
-
-.pfp {
-    margin-top:20px;
-    margin-left:30px;
-    width: 60px;
-    height:60px;
-    border: white;
-    border-style:solid;
-    border-width: 2px;
-    border-radius:10px;
-}
 
 /*text styles*/
 .title {

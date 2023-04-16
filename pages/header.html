@@ -1,0 +1,111 @@
+<!-- 
+    contains the universal navbar for the website
+    to include the navbar in a page, use the following code:
+
+    <object type="text/html" data="header.html" width="100%"></object>
+    <br>
+
+    the <br> might be necessary to prevent the navbar from overlapping the content of the page
+    the width is def important otherwise the navbar will collapse to the left.
+
+    the styles will be included alongside the html code here.
+    scroll down for the html :)
+-->
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap'); 
+
+    *{
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+        
+    }
+    
+    body, html {
+        background-color: rgb(25, 25, 25);
+        color: #ffffff;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    h1 {
+        color: #ffffff;
+        font-size: 2em;
+        font-weight: bold;
+        font-style: normal;
+        
+    }
+    
+    hr {
+        color: #ffffff;
+        height:2px;
+        border-style: none;
+        background-color: #ffffff;
+        width: 100%;
+        align-content: center;
+    
+    }
+    
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    
+    .navbar {
+        display: grid;
+        grid-template-columns: 30% 20% 20% 10% 3% 7% 10%;
+        background-color: rgb(25, 25, 25);
+    }
+    .pfp {
+        margin-top:20px;
+        margin-left:30px;
+        width: 60px;
+        height:60px;
+        border: white;
+        border-style:solid;
+        border-width: 2px;
+        border-radius:10px;
+    }
+
+    #profile {
+        color: #ffffff;
+        width: 120px;
+        margin-top: 30px;
+        margin-left: 10px;
+        display: inline;
+        overflow-wrap: break-word;
+    }
+    
+    
+    
+    
+</style>
+
+<header class="navbar">
+    <h1 style="margin-left:30px">Stellar</h1>
+    <a id="home" href="" style="margin-top: 15%;"><img src="../resources/thumb.png" alt="rect" width="20"/> Home</a>
+    <a id="timeline" href="timeline.html" style="margin-top: 15%"><img src="../resources/thumb.png" alt="rect" width="20"/> Timeline</a>
+    <a id="forum" href="forum.html" style="margin-top: 30%"><img src="../resources/thumb.png" alt="rect" width="20"/> Blog</a>
+    <img src="../resources/expander.png" style="margin-top:20px; margin-left:20px; width: 40px;"/>
+    <div style="display:flex">
+                <img class="pfp" src="../resources/example-profile.jpg"  alt="profile-pic"/>
+    <div id="profile">UserName <br>
+         <a id="forum" href="" style="margin-top: 20%; font-style:italic; font-weight:lighter;"> Logout</a>
+        </div>
+    </div> 
+    
+</header>
+<hr>
