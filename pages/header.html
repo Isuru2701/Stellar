@@ -88,6 +88,20 @@
         display: inline;
         overflow-wrap: break-word;
     }
+
+    #logout {
+        background-color: transparent;
+        color: #ffffff;
+        border: none;
+        font-size: medium;
+         font-style:italic; 
+         font-weight:lighter;
+    }
+
+    #logout:active {
+        font-size: small;
+        font-style:normal; 
+    }
     
     
     
@@ -100,10 +114,13 @@
     <a id="timeline" href="timeline.html" style="margin-top: 15%"><img src="../resources/thumb.png" alt="rect" width="20"/> Timeline</a>
     <a id="forum" href="forum.html" style="margin-top: 30%"><img src="../resources/thumb.png" alt="rect" width="20"/> Blog</a>
     <img src="../resources/expander.png" style="margin-top:20px; margin-left:20px; width: 40px;"/>
+
     <div style="display:flex">
                 <img class="pfp" src="../resources/example-profile.jpg"  alt="profile-pic"/>
     <div id="profile">UserName <br>
-         <a id="forum" href="" style="margin-top: 20%; font-style:italic; font-weight:lighter;"> Logout</a>
+
+        <!--logout button is here @MesQue1041-->
+         <button id="logout"> Logout</button>
         </div>
     </div> 
     
