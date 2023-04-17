@@ -9,9 +9,6 @@
 
 body, html {
     background-color: rgb(25, 25, 25);
-    height: 100%;
-    margin: 0;
-    padding: 0;
 
 }
 
@@ -139,7 +136,7 @@ canvas .particles-js-canvas-el {
     background-color: transparent;
     color:white;
     text-decoration: none;
-    width: 12%;
+    width: 12% !important;
     border-style: none;
 }
 
