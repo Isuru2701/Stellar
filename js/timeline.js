@@ -35,6 +35,6 @@ for(let i = 0; i < 10; i++){
     //add a node
     const node = document.createElement("div");
     node.className = 'node';
-    node.innerHTML = "<div class='circle'><img src='' height=100px width=100px alt='image'/></div><p class='title'>title</p>"
+    node.innerHTML = "<div class='circle'><img src='' height=100px width=100px alt='image'/></div><p class='title'>title | Date of event</p>"
     document.getElementById('container').appendChild(node);
 }

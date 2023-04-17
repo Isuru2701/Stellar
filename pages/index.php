@@ -1,3 +1,4 @@
+<form action="signup.inc.php" method="POST">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,13 +18,13 @@
 
 <div class="login-box">
 	<h2>Login</h2>
-	<form action="#">
+	<form action="login.inc.php" method="POST">
 		<div class="input-box">
-			<input type="email" required>
+			<input type="email" name="email" required>
 			<label>Email</label>
 		</div>
 		<div class="input-box">
-			<input type="password" required>
+			<input type="password" name="password"  required>
 			<label>Password</label>
 		</div>
 
@@ -35,7 +36,7 @@
 
 		<div class="signup-link">
 			Create an account?
-			<a href="Signup.html"> Sign Up</a>
+			<a href="Signup.php"> Sign Up</a>
 		</div>
 
 		<div class="social-media">

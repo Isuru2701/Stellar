@@ -15,37 +15,37 @@
 <div class="container">
     <div class="form signup">
         <h2>Sign Up</h2>
-
+        <form action="signup.inc.php" method="POST">
         <div class="input-box">
-            <input type="text" required>
+            <input type="text" name="username" required>
             <i class="fa-regular fa-user"></i>
             <span>Username</span>
         </div>
 
         <div class="input-box">
-            <input type="text" required>
+            <input type="text" name="email" required>
             <i class="fa-regular fa-envelope"></i>
             <span>Email Address</span>
         </div>
 
         <div class="input-box">
-            <input type="password" required>
+            <input type="password" name="password" required>
             <i class="fa-solid fa-lock"></i>
             <span>Create Password</span>
         </div>
 
         <div class="input-box">
-            <input type="password" required>
+            <input type="password" name="confirm_password" required>
             <i class="fa-solid fa-lock"></i>
             <span>Confirm Password</span>
         </div>
 
         <div class="input-box">
-            <input type="submit" value="Create Account">
+            <input type="submit" name="submit" value="Create Account">
         </div>
         
         <p>Already have an account? <a href="index.html" class="signin">Sign In</a></p>
-
+        </form>
     </div>
 </div>
 
