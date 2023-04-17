@@ -9,10 +9,6 @@
 
 body, html {
     background-color: rgb(25, 25, 25);
-    color: #ffffff;
-    height: 100%;
-    margin: 0;
-    padding: 0;
 
 }
 
@@ -24,21 +20,6 @@ h1 {
     
 }
 
-hr {
-    color: #ffffff;
-    height:2px;
-    border-style: none;
-    background-color: #ffffff;
-    width: 100%;
-    align-content: center;
-
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
 a {
     color: #ffffff;
     text-decoration: none;
@@ -48,12 +29,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
-.navbar {
-    display: grid;
-    grid-template-columns: 30% 20% 20% 10% 3% 7% 10%;
-    background-color: rgb(25, 25, 25);
-}
 
 canvas .particles-js-canvas-el {
     width: 100vw !important;
@@ -79,15 +54,6 @@ canvas .particles-js-canvas-el {
     height: 100vh;
     z-index: 0;
     
-}
-
-#profile {
-    color: #ffffff;
-    width: 120px;
-    margin-top: 30px;
-    margin-right: 10px;
-    display: inline;
-    overflow-wrap: break-word;
 }
 
 #add-post {
@@ -120,7 +86,7 @@ canvas .particles-js-canvas-el {
     float: left;
     margin: 30px;
     overflow: hidden;
-    /*gradient that goes  from transparent to purple*/
+    /*gradient that goes from transparent to purple*/
     background: linear-gradient(125deg, rgb(25,25,25), rgb(25,25,25), rgba(128, 0, 128, 0.736));
 }
 
@@ -132,21 +98,8 @@ canvas .particles-js-canvas-el {
 }
 
 
-
-.pfp {
-    margin-top:20px;
-    margin-left:30px;
-    width: 60px;
-    height:60px;
-    border: white;
-    border-style:solid;
-    border-width: 2px;
-    border-radius:10px;
-}
-
 /*text styles*/
 .title {
-    color: #ffffff;
     font-size: 40px;
     font-weight: bold;
     text-align: left;
@@ -154,6 +107,7 @@ canvas .particles-js-canvas-el {
     margin-left: 5%;
 
 }
+
 
 .info-bar {
     color: #ffffff;
@@ -175,4 +129,20 @@ canvas .particles-js-canvas-el {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+}
+
+.edit, .delete {
+    margin-left: 5%;
+    background-color: transparent;
+    color:white;
+    text-decoration: none;
+    width: 12% !important;
+    border-style: none;
+}
+
+.edit:active, .delete:active {
+    border: #6699cc;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;    
 }
