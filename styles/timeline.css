@@ -48,6 +48,18 @@ body {
 }
 
 /*button styles*/
-.edit {
-    
+.edit, .delete {
+    margin-left: 5%;
+    background-color: transparent;
+    color:white;
+    text-decoration: none;
+    width: 12% !important;
+    border-style: none;
+}
+
+.edit:active, .delete:active {
+    border: #6699cc;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;    
 }
