@@ -43,6 +43,31 @@
         <div class="input-box">
             <input type="submit" name="submit" value="Create Account">
         </div>
+        <?php
+           if (isset($_GET["error"])){
+              if($_GET["error"] == "emptyinput"){
+                echo "<p>Fill in all Fields!</p>";
+              }
+              else if($_GET["error"] == "invalidusername"){
+                echo "<p>Choose a proper username!</p>";
+              }
+              else if($_GET["error"] == "invalidemail"){
+                echo "<p>Choose a proper email!</p>";
+              }
+              else if($_GET["error"] == "incorrectpassword"){
+                echo "<p>Passwords dont match my guy!</p>";
+              }
+              else if($_GET["error"] == "usernametaken"){
+                echo "<p>Username is already taken!</p>";
+              }
+              else if($_GET["error"] == "stmtfailed!"){
+                echo "<p>Something went wrong, try again!</p>";
+              }
+              else if($_GET["error"] == "none"){
+                echo "<p>Account Created!</p>";
+              }
+           }
+        ?>
         
         <p>Already have an account? <a href="index.html" class="signin">Sign In</a></p>
         </form>
