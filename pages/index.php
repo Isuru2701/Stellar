@@ -1,4 +1,4 @@
-<form action="signup.inc.php" method="POST">
+<form action="login.inc.php" method="POST">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,8 +31,19 @@
 		<div class="forgot-password">
 			<a href="#">Forgot Password?</a>
 		</div>
+		<?php
+           if (isset($_GET["error"])){
+              if($_GET["error"] == "emptyinput"){
+                echo "<p>Fill in all Fields brudda!</p>";
+              }
+              else if($_GET["error"] == "wronglogin"){
+                echo "<p>Incorrect login information!</p>";
+              }
+           }
+        ?>
 
-		<button type="submit" class="btn">Login</button>
+
+		<button type="submit" name ="submit" class="btn">Login</button>
 
 		<div class="signup-link">
 			Create an account?

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!-- 
     contains the universal navbar for the website
     to include the navbar in a page, use the following code:

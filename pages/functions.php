@@ -105,6 +105,45 @@ function createUser($conn, $username, $email, $password)
      header("location:Signup.php?error=none");
     exit();
 
+}
 
+function emptyInputLogin($username, $password)
+{
+   $result = "";   
+   if(empty($username) || empty($password)){
+         $result = true;
+   }
+   else
+   {
+    $result = false;
+   }
+
+   return $result;
+}
+
+function loginUser($conn, $username, $password)
+{
+    $usernameIsThere = usernameExists($conn, $username, $username);
     
+    if($usernameIsThere == false){
+        header("Location: index.php?error=wronglogin");
+        exit();
+    } 
+
+    $pwdHashed = $usernameIsThere["userPwd" ];
+    $checkPwd = password_verify($password, $pwdHashed);
+
+    if ($checkPwd === false){
+        header("Location: index.php?error=wronglogin");
+        exit();
+    }
+    else if($checkPwd === true){
+        session_start();
+        $_SESSION["userid"] = $usernameIsThere["userId"];
+        $_SESSION["username"] = $usernameIsThere["userName"];
+        header("Location: forum.html.php");
+        exit();
+
+
+    }
 }
