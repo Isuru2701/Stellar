@@ -57,9 +57,10 @@
         <form method="post" action="comment.php">
             <br>
             <textarea name="comment" placeholder="Comment" required></textarea>
+            <br>
+            <input class="add-comment" type="submit" value="Post" >
         </form>
 
-        <button class="add-comment"> add comment</button>
         <br>
         
         <br>

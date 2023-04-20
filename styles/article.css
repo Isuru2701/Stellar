@@ -96,3 +96,8 @@ textarea {
     border-style: solid;
     border-width: 2px;
 }
+
+.add-comment:active {
+    color: white;
+    background-color: purple;
+}
