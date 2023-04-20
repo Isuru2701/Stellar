@@ -52,20 +52,18 @@
     <!--container for comments-->
     <div id="comments">
         <br>
+        <form method="post" action="comment.php">
+            <br>
+            <textarea name="comment" placeholder="Comment" required></textarea>
+        </form>
+
         <button class="add-comment"> add comment</button>
         <br>
         
-        <form method="post" action="comment.php">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="comment" placeholder="Comment" required></textarea>
-        <input type="submit" name="submit" value="Post Comment">
         <br>
 
         <div class="comment">
-            <span class="commenter-pfp">
-                <img src="../resources/example-profile.jpg" alt="comment author">
-            </span>
+                <img class="commenter-pfp" src="../resources/example-profile.jpg" alt="comment author">
             <span>
                 <div class="commenter">
                     User | Date
@@ -75,6 +73,59 @@
                 </div>
             </span>
         </div>
+
+        <div class="comment">
+                <img class="commenter-pfp" src="../resources/example-profile.jpg" alt="comment author">
+            <span>
+                <div class="commenter">
+                    User | Date
+                </div> 
+                <div class="text">
+                    Wow, this post is so great!
+                </div>
+            </span>
+        </div>
+
+
+        <div class="comment">
+                <img class="commenter-pfp" src="../resources/example-profile.jpg" alt="comment author">
+            <span>
+                <div class="commenter">
+                    User | Date
+                </div> 
+                <div class="text">
+                    Wow, this post is so great!
+                </div>
+            </span>
+        </div>
+
+
+        <div class="comment">
+                <img class="commenter-pfp" src="../resources/example-profile.jpg" alt="comment author">
+            <span>
+                <div class="commenter">
+                    User | Date
+                </div> 
+                <div class="text">
+                    Wow, this post is so great!
+                </div>
+            </span>
+        </div>
+
+
+        <div class="comment">
+                <img class="commenter-pfp" src="../resources/example-profile.jpg" alt="comment author">
+            <span>
+                <div class="commenter">
+                    User | Date
+                </div> 
+                <div class="text">
+                    Wow, this post is so great!
+                </div>
+            </span>
+        </div>
+
+        
     </div>
 
     

@@ -7,6 +7,20 @@
 	
 }
 
+form {
+    margin:20px;
+
+}
+
+textarea {
+    background-color: #191919;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    color: white;
+    width:25%;
+    height: 100px;
+}
+
 #title {
     color: white;
     margin-left: 5%;
@@ -19,6 +33,7 @@
     font-weight: normal;
     text-align: center;
     margin: 5%;
+    color: #cdcdcd;
 }
 
 #cover-image {
@@ -41,6 +56,7 @@
     font-style: inherit;
     display: grid;
     grid-template-columns: 10% 90%;
+    margin-top: 50px;
     
 }
 
@@ -62,11 +78,10 @@
 }
 
 .comment .commenter-pfp {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
     padding: 5px;
-    border-radius: 10px;
-    width:100px;
+    border-radius: 50px;
     margin-left: 15px;
 }
 
