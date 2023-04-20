@@ -54,6 +54,12 @@
         <br>
         <button class="add-comment"> add comment</button>
         <br>
+        
+        <form method="post" action="comment.php">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="comment" placeholder="Comment" required></textarea>
+        <input type="submit" name="submit" value="Post Comment">
         <br>
 
         <div class="comment">
