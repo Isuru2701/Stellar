@@ -14,20 +14,14 @@
   <object type="text/html" data="header.html" width="100%"></object>
   <br>
 
-      <!--TODO: blog form-->
-      <div class="container mt-5">
-        <form method="POST" src="" action="upload.php" method="post" enctype="multipart/form-data">
-            <input type="text" name="title" placeholder="Blog titile" ><br>
-            <textarea name="content" id="content" cols="30" rows="10"></textarea><br>
-    </div> 
-    <!-- <input type="file" id="file-input">
-        <img id="preview">
-        <script src="preview.js"></script>
-     -->
-  <input type="file" name="image"><br>
-  <input type="submit" name="submit" value="Upload">
 
- </form>
+    <form method="POST" src="" action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="title" placeholder="Blog title" required><br>
+        <input type="text" placeholder="image link" name="image" required><br>
+        <textarea name="content" id="content" cols="100" rows="10" placeholder="Write here!"  required></textarea><br>
+        <input id="submit" type="submit" name="submit" value="Upload">
+
+    </form>
     
 </body>
 </html>

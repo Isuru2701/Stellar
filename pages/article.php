@@ -51,6 +51,8 @@
 
     <!--container for comments-->
     <div id="comments">
+
+    <!-- posting comments -->
         <br>
         <form method="post" action="comment.php">
             <br>
