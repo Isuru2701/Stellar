@@ -27,32 +27,18 @@
 </head>
 <body>
 
-    <header class="navbar">
-        <h1 style="margin-left:30px">Stellar</h1>
-        <a id="home" href="" style="margin-top: 15%;"><img src="../resources/thumb.png" alt="rect" width="20"/> Home</a>
-        <a id="timeline" href="timeline.html" style="margin-top: 15%"><img src="../resources/thumb.png" alt="rect" width="20"/> Timeline</a>
-        <a id="forum" href="forum.html" style="margin-top: 30%"><img src="../resources/thumb.png" alt="rect" width="20"/> Blog</a>
-        <img src="../resources/expander.png" style="margin-top:20px; margin-left:20px; width: 40px;"/>
-        <div style="display:flex">
-            <img class="pfp" src="../resources/example-profile.jpg"  alt="profile-pic"/>
-            <div id="profile">UserName <br>
-                <a id="forum" href="" style="margin-top: 20%; font-style:italic; font-weight:lighter;"> Logout</a>
-            </div>
-        </div> 
-
-    </header>
-    <hr>
-
+    <object type="text/html" data="header.html" width="100%"></object>
+    <br>
 
     <!-- the templating -->
-    <div class="title">
+    <div id="title">
         title goes here
     </div>
     <div class="info-bar">
         User | Date
     </div>
     <div id="cover-image">
-        <img src="../resources/pawel-nolbert-62OK9xwVA0c-unsplash.jpg" alt="cover-image">
+        <img src="../resources/pawel-nolbert-62OK9xwVA0c-unsplash.jpg" alt="cover-image" width=70%>
     </div>
     <div class="post">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales massa ut tristique aliquam. Integer egestas venenatis bibendum. Maecenas sed mattis massa. Nam accumsan felis ac ipsum ultrices, a eleifend ante condimentum. Etiam imperdiet vitae nibh quis finibus. Maecenas molestie mauris venenatis rhoncus viverra. Aliquam semper libero ut nibh sagittis tristique. Praesent vitae arcu vitae risus tristique sagittis vel in libero. Etiam aliquam risus mi, nec sodales lorem maximus sit amet. Vestibulum id commodo ante, ut pulvinar libero. Nam efficitur neque quis nibh eleifend posuere. Nulla ac vulputate nibh, vitae pharetra ligula. Sed vulputate mauris dui, sed gravida lorem lacinia eget.</p>   
@@ -65,15 +51,22 @@
 
     <!--container for comments-->
     <div id="comments">
+
+    <!-- posting comments -->
         <br>
-        <button class="add-comment"> add comment</button>
+        <form method="post" action="comment.php">
+            <br>
+            <textarea name="comment" placeholder="Comment" required></textarea>
+            <br>
+            <input class="add-comment" type="submit" value="Post" >
+        </form>
+
         <br>
+        
         <br>
 
         <div class="comment">
-            <span class="commenter-pfp">
-                <img src="../resources/example-profile.jpg" alt="comment author">
-            </span>
+                <img class="commenter-pfp" src="../resources/example-profile.jpg" alt="comment author">
             <span>
                 <div class="commenter">
                     User | Date
@@ -83,6 +76,59 @@
                 </div>
             </span>
         </div>
+
+        <div class="comment">
+                <img class="commenter-pfp" src="../resources/example-profile.jpg" alt="comment author">
+            <span>
+                <div class="commenter">
+                    User | Date
+                </div> 
+                <div class="text">
+                    Wow, this post is so great!
+                </div>
+            </span>
+        </div>
+
+
+        <div class="comment">
+                <img class="commenter-pfp" src="../resources/example-profile.jpg" alt="comment author">
+            <span>
+                <div class="commenter">
+                    User | Date
+                </div> 
+                <div class="text">
+                    Wow, this post is so great!
+                </div>
+            </span>
+        </div>
+
+
+        <div class="comment">
+                <img class="commenter-pfp" src="../resources/example-profile.jpg" alt="comment author">
+            <span>
+                <div class="commenter">
+                    User | Date
+                </div> 
+                <div class="text">
+                    Wow, this post is so great!
+                </div>
+            </span>
+        </div>
+
+
+        <div class="comment">
+                <img class="commenter-pfp" src="../resources/example-profile.jpg" alt="comment author">
+            <span>
+                <div class="commenter">
+                    User | Date
+                </div> 
+                <div class="text">
+                    Wow, this post is so great!
+                </div>
+            </span>
+        </div>
+
+        
     </div>
 
     

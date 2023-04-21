@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="../styles/forum.css">
     <link rel="stylesheet" href="../styles/create.css">
 
-    <link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-
     <title>Create a blogpost</title>
 </head>
 <body>
@@ -17,20 +15,16 @@
   <br>
 
 
-    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <form method="POST" src="" action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="title" placeholder="Blog title" required><br>
+        <input type="text" placeholder="image link" name="image" required><br>
+        <textarea name="content" id="content" cols="100" rows="10" placeholder="Write here!"  required></textarea><br>
 
-    <div id="editor">
+        <div id="error">If any error occurs, use this div to display it!, otherwise display nothing</div>
 
-    </div>
+        <input id="submit" type="submit" name="submit" value="Upload">
 
-    <script>
-        var quill = new Quill('#editor', {
-          theme: 'snow'
-        });
-      </script>
-
-    <button id="submit">Finish</button>
-    
+    </form>
     
 </body>
 </html>
