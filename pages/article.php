@@ -48,7 +48,22 @@
     </div>
 
     <hr>
+    <?php
+    // Retrieve the blog post details from the database
+    $post_id = $_GET['id'];
+    $sql = "SELECT * FROM blog_posts WHERE id = $post_id";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($result);
 
+    // Construct the URL of the image file on your server
+    $image_url = "uploads/" . $row['image'];
+
+    // Display the blog post content and image on the web page
+    echo "<h1>" . $row['title'] . "</h1>";
+    echo "<p>" . $row['content'] . "</p>";
+    echo "<img src='$image_url' alt='Blog post image'>";
+
+    ?>
     <!--container for comments-->
     <div id="comments">
 
