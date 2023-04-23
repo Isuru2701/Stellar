@@ -88,7 +88,7 @@ form input {
 }
 
 /*button styles*/
-.edit, .delete {
+.delete {
     margin-left: 5%;
     background-color: transparent;
     color:white;
@@ -97,7 +97,7 @@ form input {
     border-style: none;
 }
 
-.edit:active, .delete:active {
+.delete:active {
     border: #6699cc;
     border-style: solid;
     border-width: 2px;
