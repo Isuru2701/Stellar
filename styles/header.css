@@ -23,7 +23,7 @@ a:hover {
 .navbar {
     display: grid;
     grid-template-columns: 30% 20% 20% 10% 3% 7% 10%;
-    background-color: rgb(25, 25, 25);
+    background-color: transparent;
 
     padding: 0;
     box-sizing: border-box;

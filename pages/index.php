@@ -49,25 +49,7 @@
 			Create an account?
 			<a href="Signup.php"> Sign Up</a>
 		</div>
-		<?php
-           if (isset($_GET["error"])){
-              if($_GET["error"] == "emptyfields"){
-                echo "<p>Fill in all Fieldss!</p>";
-              }
-              else if($_GET["error"] == "wronglogin"){
-                echo "<p>Incorrect Login Information!</p>";
-              }
-              else if($_GET["error"] == "invalidemail"){
-                echo "<p>Choose a proper email!</p>";
-              }
-              else if($_GET["error"] == "incorrectpassword"){
-                echo "<p>Passwords dont match my guy!</p>";
-              }
-              else if($_GET["error"] == "usernametaken"){
-                echo "<p>Username is already taken!</p>";
-              }
-           }
-        ?>
+		
 
 		<div class="social-media">
 			<a href="#"><i class='bx bxl-google' ></i></a>

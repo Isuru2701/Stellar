@@ -69,7 +69,7 @@
            }
         ?>
         
-        <p>Already have an account? <a href="index.html" class="signin">Sign In</a></p>
+        <p>Already have an account? <a href="index.php" class="signin">Sign In</a></p>
         </form>
     </div>
 </div>

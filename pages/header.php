@@ -18,21 +18,27 @@ session_start();
 
 <header class="navbar">
     <h1 style="margin-left:30px; color:#ffffff">Stellar</h1>
-    <a id="home" href="" target="_top" style="margin-top: 15%;"><img src="../resources/thumb.png" alt="rect" width="20"/> Home</a>
+    <a id="home" href="home.html" target="_top" style="margin-top: 15%;"><img src="../resources/thumb.png" alt="rect" width="20"/> Home</a>
     <a id="timeline" href="timeline.html" target="_top" style="margin-top: 15%"><img src="../resources/thumb.png" alt="rect" width="20"/> Timeline</a>
-    <a id="forum" href="forum.html" target="_top" style="margin-top: 30%"><img src="../resources/thumb.png" alt="rect" width="20"/> Blog</a>
+    <a id="forum" href="forum.php" target="_top" style="margin-top: 30%"><img src="../resources/thumb.png" alt="rect" width="20"/> Blog</a>
     <img src="../resources/expander.png" style="margin-top:20px; margin-left:20px; width: 40px;"/>
+    <?php
+if (isset($_SESSION["username"])) 
+{
+    echo '<div style="display:flex">';
+    echo '<img class="pfp" src="../resources/example-profile.jpg" alt="profile-pic"/>';
+    echo '<div id="profile">UserName <br>';
+    echo '<a href="logout.php" id="logout"> Logout</a>';
+    echo '</div>';
+    echo '</div>';
+}
+else
+{
+    echo '<a id="Signup" href="Signup.php" target="_top" style="margin-top: 15%">Sign up</a>';
+    echo '<a id="Login" href="index.php" target="_top" style="margin-top: 15%">Login</a>';
+}
 
-    <div style="display:flex">
-                <img class="pfp" src="../resources/example-profile.jpg"  alt="profile-pic"/>
-    <div id="profile">UserName <br>
 
-        <!--logout button is here @MesQue1041-->
-         <button id="logout"> Logout</button>
-
-         
-        </div>
-    </div> 
-    
+?>
 </header>
 <hr>
