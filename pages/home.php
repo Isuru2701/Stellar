@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <object type="text/html" data="header.php" width="100%"></object>
+    <?php include 'header.php';?>
     <br>
 
    
