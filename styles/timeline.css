@@ -5,7 +5,44 @@ body {
     background-color: #191919;
 }
 
+form input {
+    background-color: #3e3e3e;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    color: white;
+    width:50%;
+    height: 75px;
+    margin: 2% 10%;
+    padding: 1%;
+    font-size: 20px;
+}
 
+#submit {
+    margin-top: 30px;
+    margin-left: 10%;
+    border: #6699cc;
+    background-color: transparent;
+    color:#6699cc;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    
+    text-decoration: none;
+
+    padding: 10px;
+    width: 12%;
+
+}
+
+#date {
+    width: 10%;
+    color:white;
+
+}
+::-webkit-calendar-picker-indicator { 
+    background: transparent;
+    color: white;
+ }
 
 
 .node {
@@ -51,7 +88,7 @@ body {
 }
 
 /*button styles*/
-.edit, .delete {
+.delete {
     margin-left: 5%;
     background-color: transparent;
     color:white;
@@ -60,7 +97,7 @@ body {
     border-style: none;
 }
 
-.edit:active, .delete:active {
+.delete:active {
     border: #6699cc;
     border-style: solid;
     border-width: 2px;
