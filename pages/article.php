@@ -31,7 +31,7 @@
     <br>
 
     <!-- the templating -->
-    <div id="title">
+    <!-- <div id="title">
         title goes here
     </div>
     <div class="info-bar">
@@ -45,7 +45,7 @@
 <p>Integer cursus magna et suscipit condimentum. In porttitor ex id sem pharetra, id maximus velit vulputate. In in felis nec leo lobortis maximus at non leo. Donec in iaculis nulla. Fusce posuere pellentesque sapien, vel ullamcorper odio ultricies eget. In vel leo diam. Integer ut ipsum dignissim, elementum lectus sed, vulputate lorem. Etiam in tincidunt enim, eu scelerisque mi. Nunc id aliquam neque. Fusce consequat augue lectus, vel molestie arcu pellentesque eget.</p>
 <p>Donec sodales, felis iaculis venenatis tristique, leo dui interdum orci, congue vulputate purus erat in ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse sapien est, sodales quis faucibus nec, aliquam non metus. Integer interdum commodo neque, ac tincidunt tellus fringilla a. Curabitur non malesuada lectus, at maximus tortor. Nunc posuere nunc a nisi laoreet, nec bibendum nibh lacinia. Integer feugiat sem sit amet sem luctus bibendum. Etiam volutpat euismod gravida. Nunc pretium, nisi ut viverra posuere, quam mi scelerisque libero, quis accumsan nulla est ut tellus. Donec eleifend sem ante, a sollicitudin nisi suscipit in. Proin consectetur laoreet risus, a ornare dolor.</p>
 
-    </div>
+    </div> -->
 
     <hr>
     <?php
@@ -59,11 +59,14 @@
     $image_url = "uploads/" . $row['image'];
 
     // Display the blog post content and image on the web page
-    echo "<h1>" . $row['title'] . "</h1>";
-    echo "<p>" . $row['content'] . "</p>";
-    echo "<img src='$image_url' alt='Blog post image'>";
+    echo "<div id='title'>" . $row['title'] . "</div>";
+    echo "<div class='post'>" . $row['content'] . "</div>";
+    echo "<div id='cover-image'> <img src='$image_url' alt='Blog post image' width=70%> </div>";
 
     ?>
+    <hr>
+
+    
     <!--container for comments-->
     <div id="comments">
 
