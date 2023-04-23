@@ -27,7 +27,7 @@
 </head>
 <body>
 
-    <object type="text/html" data="header.html" width="100%"></object>
+    <?php include 'header.php';?>
     <br>
 
     <!-- the templating -->

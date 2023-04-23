@@ -51,8 +51,7 @@
 
 <body>
 
-    <object type="text/html" data="header.html" width="100%"></object>
-
+    <?php include 'header.php';?>
     <br>
     <a href="create.html" id="add-post">
         create new post &nbsp; + 
