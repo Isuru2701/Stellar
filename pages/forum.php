@@ -53,7 +53,7 @@
 
     <?php include 'header.php';?>
     <br>
-    <a href="create.html" id="add-post">
+    <a href="create.php" id="add-post">
         create new post &nbsp; + 
     </a>
 

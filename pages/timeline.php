@@ -12,7 +12,7 @@
 
     <!--TODO: add a form to add a node-->
     <div style="width:100%; margin-bottom:5%">
-    <form action="" method="post">
+    <form action="" method="post" id="admin-only">
 
         <input type="text" name="node" placeholder="Title">
         <input id="date" type="date" name="date" placeholder="Date">
