@@ -17,6 +17,7 @@
 
         <input type="text" name="node" placeholder="Title">
         <input id="date" type="date" name="date" placeholder="Date">
+        <input id="image" type="text" name="date" placeholder="image link">
         <br>
         <input id="submit" type="submit" value="Post">
     </form>
