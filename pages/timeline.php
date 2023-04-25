@@ -8,8 +8,7 @@
 </head>
 <body>
 
-    <object type="text/html" data="header.html" width="100%"></object>
-    <br>
+    <?php include 'header.php' ?>
 
     <!--TODO: add a form to add a node-->
     <div style="width:100%; margin-bottom:5%">

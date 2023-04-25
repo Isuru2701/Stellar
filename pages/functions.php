@@ -141,7 +141,7 @@ function loginUser($conn, $username, $password)
         session_start();
         $_SESSION["userid"] = $usernameIsThere["userId"];
         $_SESSION["username"] = $usernameIsThere["userName"];
-        header("Location: home.html");
+        header("Location: home.php");
         exit();
 
 

@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../styles/forum.css">
 
     <!--particle library-->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../js/particles.js"></script>
     <script>
         particlesJS.load('particles', '../resources/particles.json', function() {
             console.log('particles.js loaded');
