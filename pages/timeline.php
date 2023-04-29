@@ -51,7 +51,14 @@
             echo "<img class='circle' src='" . $row['image_link']."'/>";
             echo "<p class='title'>". $row['title'] ."</p>";
             echo "<p class='title'>". "| " . $row['date'] ."</p>";
+
+            if(isset($_SESSION['privilege'])){
+                if($_SESSION['privilege'] == 1) {
+                    echo "<button class='delete'> <img src='../resources/delete-btn.svg' width=20% alt='delete'/> </button>";
+                }
+            }
             echo "</div>";
+
         }
     }
 
