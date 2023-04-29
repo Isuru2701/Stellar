@@ -32,3 +32,4 @@ CREATE TABLE `events` (
 -- updates
 alter table events add column `authorId` int(11) NOT NULL references `users`(`userId`);
 alter table blog_posts add column `authorId` int(11) NOT NULL references `users`(`userId`);
+alter table users add column privilege boolean not null;

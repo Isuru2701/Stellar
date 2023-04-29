@@ -1304,12 +1304,17 @@
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="372" parent="346" name="PRIMARY">
+    <column id="372" parent="346" name="privilege">
+      <DasType>tinyint(1)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <index id="373" parent="346" name="PRIMARY">
       <ColNames>userId</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="373" parent="346" name="PRIMARY">
+    <key id="374" parent="346" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
