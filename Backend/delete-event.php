@@ -8,11 +8,11 @@ $conn = new mysqli($servername, $dbUsername, $dbPassword, $dbName);
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $sql = "DELETE FROM blog_posts WHERE id='$id'";
+    $sql = "DELETE FROM events WHERE id='$id'";
 
     if ($conn->query($sql) === TRUE) {
 
-        header('Location: ../pages/forum.php');
+        header('Location: ../pages/timeline.php');
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

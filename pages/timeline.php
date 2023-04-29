@@ -20,14 +20,13 @@
 
     <div style="width:100%; margin-bottom:5%">
 
-    <form action="../backend/create-event.php" method="post" id="admin-only">
+        <?php
 
-        <input type="text" name="node" placeholder="Title" required>
-        <input id="date" type="date" name="date" placeholder="Date" required>
-        <input id="image" type="text" name="link" placeholder="image link" required>
-        <br>
-        <input id="submit" type="submit" value="Post" name="Submit">
-    </form>
+            if(isset($_SESSION['privilege']) && $_SESSION['privilege'] == 1) {
+                echo '    <form action="../backend/create-event.php" method="post" id="admin-only"><input type="text" name="node" placeholder="Title" required><input id="date" type="date" name="date" placeholder="Date" required><input id="image" type="text" name="link" placeholder="image link" required><br><input id="submit" type="submit" value="Post" name="Submit"></form>';
+            }
+        ?>
+
     </div>
     <!--container div-->
     <div id="container">
@@ -55,7 +54,7 @@
 
             if(isset($_SESSION['privilege'])){
                 if($_SESSION['privilege'] == 1) {
-                    echo "<button class='delete'> <img src='../resources/delete-btn.svg' width=20% alt='delete'/> </button>";
+                    echo "<a class='delete' href='../backend/delete-event.php?id=". $row['id'] ."'> <img src='../resources/delete-btn.svg' width=20% alt='delete'/> </a>";
                 }
             }
             echo "</div>";

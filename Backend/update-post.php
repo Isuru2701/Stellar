@@ -15,7 +15,7 @@
 <br>
 
 
-<form method="POST" src="" method="post" enctype="multipart/form-data">
+<form method="POST" enctype="multipart/form-data">
     <input type="text" name="title" placeholder="Blog title" required><br>
     <input type="text" placeholder="image link" name="image" required><br>
     <textarea name="content" id="content" cols="100" rows="10" placeholder="Write here!"  required></textarea><br>
@@ -37,7 +37,7 @@ $image_link = $_POST['image'];
 $content = $_POST['content'];
 
 // Validate image link using regex
-$pattern = '/^(http|https)://.+?.(gif|jpe?g|tiff?|png|webp|bmp)$/i';
+$pattern = '#^(http|https)://.+?.(gif|jpe?g|tiff?|png|webp|bmp)$#i';
 if (!preg_match($pattern, $image_link)) {
     // Invalid image link
     echo "Invalid image link";
