@@ -12,6 +12,7 @@ CREATE TABLE `users` (
 -- added to by create.php
 CREATE TABLE `blog_posts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `authorId` int(11) NOT NULL references `users`(`userId`),
   `title` varchar(255) NOT NULL,
   `image_link` varchar(255) NOT NULL,
   `content` text NOT NULL,
@@ -27,3 +28,7 @@ CREATE TABLE `events` (
     `image_link` VARCHAR(255),
     PRIMARY KEY (`id`)
 );
+
+-- updates
+alter table events add column `authorId` int(11) NOT NULL references `users`(`userId`);
+alter table blog_posts add column `authorId` int(11) NOT NULL references `users`(`userId`);
