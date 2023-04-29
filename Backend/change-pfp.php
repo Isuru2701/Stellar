@@ -24,6 +24,8 @@ if (isset($_POST['submit']) && isset($_SESSION['username'])) {
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
+
+    header("Location: account.php?=update_success");
 }
 $conn->close();
 ?>

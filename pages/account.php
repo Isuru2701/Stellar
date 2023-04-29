@@ -20,11 +20,13 @@
             <img id="profile-pic-view" src="../resources/example-profile.jpg" alt="default">
         </span>
 
+        <!-- php echo the appropriate data from the session cache here -->
         <span style="margin-top: 30px">
             <h1>USERNAME</h1>
             <h1>ACCOUNT TYPE </h1>
+
             <form method="post" action="../backend/change-pfp.php">
-                <input type="url" name="image-link" placeholder="`Image link">
+                <input type="url" name="image-link" placeholder="Image link">
                 <input type="submit" name="submit" value="Change profile picture">
             </form>
         </span>
