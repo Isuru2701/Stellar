@@ -29,7 +29,7 @@ CREATE TABLE `events` (
     PRIMARY KEY (`id`)
 );
 
--- updates
+-- updates: the above scripts probably have these added already, but just in case if you need to add them manually, just run these
 alter table events add column `authorId` int(11) NOT NULL references `users`(`userId`);
 alter table blog_posts add column `authorId` int(11) NOT NULL references `users`(`userId`);
 alter table users add column privilege boolean not null;
