@@ -15,7 +15,7 @@
 <br>
 
 
-<form method="POST" src="" method="post" enctype="multipart/form-data">
+<form method="POST" method="POST" enctype="multipart/form-data">
     <input type="text" name="title" placeholder="Blog title" required><br>
     <input type="text" placeholder="image link" name="image" required><br>
     <textarea name="content" id="content" cols="100" rows="10" placeholder="Write here!"  required></textarea><br>
@@ -25,25 +25,43 @@
     <input id="submit" type="submit" name="submit" value="Update">
 
 </form>
-
 <?php
-require_once '../pages/database.php';
-
+$servername = "localhost";                 //Establishing the database connection
+$dbUsername = "root";
+$dbPassword = "";
+$dbName = "mwd";
+$conn = new mysqli($servername, $dbUsername, $dbPassword, $dbName);
 // Check for form submission
 
 $id = $_GET["id"];
-$title = $_POST['title'];
-$image_link = $_POST['image'];
-$content = $_POST['content'];
+
+if(isset($_POST['title'])) {
+    $title = $_POST['title'];
+} else {
+    $title = '';
+}
+
+if(isset($_POST['image'])) {
+    $image_link = $_POST['image'];
+} else {
+    $image_link = '';
+}
+
+if(isset($_POST['content'])) {
+    $content = $_POST['content'];
+} else {
+    $content = '';
+}
+
 
 // Validate image link using regex
-$pattern = '/^(http|https)://.+?.(gif|jpe?g|tiff?|png|webp|bmp)$/i';
+$pattern = '/^(http|https):\/\/.+?\.(gif|jpe?g|tiff?|png|webp|bmp)$/i';
 if (!preg_match($pattern, $image_link)) {
     // Invalid image link
     echo "Invalid image link";
     exit();
 }
-if (isset($_GET['id']))
+if (isset($id))
 {
     // Update post in database
     $sql = "UPDATE blog_posts SET title='$title', image_link='$image_link', content='$content' WHERE id='$id'";
@@ -60,5 +78,8 @@ if (isset($_GET['id']))
 // Close database connection
 $conn->close();
 ?>
+
+
+
 </body>
 </html>
