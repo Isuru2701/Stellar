@@ -19,6 +19,7 @@
     ?>
 
     <div style="width:100%; margin-bottom:5%">
+
     <form action="../backend/create-event.php" method="post" id="admin-only">
 
         <input type="text" name="node" placeholder="Title" required>
