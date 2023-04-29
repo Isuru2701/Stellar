@@ -31,21 +31,6 @@
           });
     </script>
 
-    <script defer>
-        const canvas = document.querySelector('particles');
-
-    // Function to resize the canvas
-    function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    }
-
-    
-    window.addEventListener('resize', resizeCanvas);
-    resizeCanvas();
-    </script>
-
-
 </head>
 
 

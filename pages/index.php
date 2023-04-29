@@ -28,16 +28,13 @@
 			<label>Password</label>
 		</div>
 
-		<div class="forgot-password">
-			<a href="#">Forgot Password?</a>
-		</div>
 		<?php
            if (isset($_GET["error"])){
               if($_GET["error"] == "emptyinput"){
-                echo "<p>Fill in all Fields brudda!</p>";
+                echo "<p>Some fields are empty</p>";
               }
               else if($_GET["error"] == "wronglogin"){
-                echo "<p>Incorrect login information!</p>";
+                echo "<p>Incorrect login information</p>";
               }
            }
         ?>
@@ -53,7 +50,7 @@
 
 		<div class="social-media">
 			<a href="#"><i class='bx bxl-google' ></i></a>
-			<a href="#"><i class='bx bxl-facebook' ></i></a>
+			<a href="https://github.com/Isuru2701/Stellar" target="_blank"><i class='bx bxl-github' ></i></a>
 			<a href="#"><i class='bx bxl-instagram' ></i></a>	
 		</div>
 
