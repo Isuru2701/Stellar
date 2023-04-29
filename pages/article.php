@@ -46,22 +46,22 @@
 <p>Donec sodales, felis iaculis venenatis tristique, leo dui interdum orci, congue vulputate purus erat in ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse sapien est, sodales quis faucibus nec, aliquam non metus. Integer interdum commodo neque, ac tincidunt tellus fringilla a. Curabitur non malesuada lectus, at maximus tortor. Nunc posuere nunc a nisi laoreet, nec bibendum nibh lacinia. Integer feugiat sem sit amet sem luctus bibendum. Etiam volutpat euismod gravida. Nunc pretium, nisi ut viverra posuere, quam mi scelerisque libero, quis accumsan nulla est ut tellus. Donec eleifend sem ante, a sollicitudin nisi suscipit in. Proin consectetur laoreet risus, a ornare dolor.</p>
 
     </div> -->
-
-    <hr>
     <?php
     // Retrieve the blog post details from the database
+    include 'database.php';
+
     $post_id = $_GET['id'];
     $sql = "SELECT * FROM blog_posts WHERE id = $post_id";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
 
-    // Construct the URL of the image file on your server
-    $image_url = "uploads/" . $row['image'];
-
     // Display the blog post content and image on the web page
+    echo "<br>";
     echo "<div id='title'>" . $row['title'] . "</div>";
-    echo "<div class='post'>" . $row['content'] . "</div>";
-    echo "<div id='cover-image'> <img src='$image_url' alt='Blog post image' width=70%> </div>";
+    echo "<br>";
+    echo "<div id='cover-image'> <img src='". $row['image_link'] . "' alt='Blog post image' width=70%> </div>";
+    echo "<div class='post'>" . nl2br($row['content']) . "</div>";
+
 
     ?>
     <hr>
