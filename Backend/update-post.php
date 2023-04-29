@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<?php include 'header.php';?>
+<?php include '../pages/header.php';?>
 <br>
 
 
