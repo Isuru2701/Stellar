@@ -22,7 +22,7 @@
 
     <div id="error">If any error occurs, use this div to display it!, otherwise display nothing</div>
 
-    <input id="submit" type="submit" name="submit" value="Upload">
+    <input id="submit" type="submit" name="submit" value="Update">
 
 </form>
 

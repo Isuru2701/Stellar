@@ -15,7 +15,7 @@
   <br>
 
 
-    <form method="POST" src="" action="upload.php" method="post" enctype="multipart/form-data">
+    <form method="POST" src="" action="../backend/create-post.php" method="post" enctype="multipart/form-data">
         <input type="text" name="title" placeholder="Blog title" required><br>
         <input type="text" placeholder="image link" name="image" required><br>
         <textarea name="content" id="content" cols="100" rows="10" placeholder="Write here!"  required></textarea><br>

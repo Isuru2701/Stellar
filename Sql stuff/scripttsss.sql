@@ -9,7 +9,7 @@ CREATE TABLE `users` (
 
 
 -- blog posts that are loaded into the forum.php and article.php. alter requests sent from forum and create as well.
--- added to by create.php
+-- added to by create-post.php
 CREATE TABLE `blog_posts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `authorId` int(11) NOT NULL references `users`(`userId`),
