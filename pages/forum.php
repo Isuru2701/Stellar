@@ -61,7 +61,7 @@
 
                         if(isset($_SESSION['privilege']) && $_SESSION['privilege'] == 1) {
                             echo '<div class="admin-only">';
-                            echo '<a class="edit" href="../backend/update-post.php?id='. $row['id'] .'"><img src="../resources/edit-btn.svg" alt="edit" width="7%"></a>';
+                            echo '<a class="edit" href="update-post.php?id='. $row['id'] .'"><img src="../resources/edit-btn.svg" alt="edit" width="7%"></a>';
                             echo '<a class="delete" href="../backend/delete-post.php?id='. $row['id'] .'"> <img src="../resources/delete-btn.svg" alt="edit" width="7%"></a>';
                             echo '</div>';
                         }
