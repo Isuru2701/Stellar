@@ -24,8 +24,10 @@ function addToDb($title, $date, $link) {
 
     $con = new mysqli($server, $username, $passwd, $db);
 
-    $stmt = $con->prepare("INSERT INTO events (title, date, link) VALUES (?, ?, ?)");
-    $stmt->bind_param("sss", $title, $date, $link);
+    //TODO: PROBLEM WITH THE SESSION
+
+    $stmt = $con->prepare("INSERT INTO events (title, date, image_link, authorId) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("sssd", $title, $date, $link, $_SESSION['userid']);
     $stmt->execute();
     $stmt->close();
     $con->close();
