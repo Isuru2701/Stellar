@@ -17,13 +17,30 @@
 
     <div style="display: grid; grid-template-columns: 35% 65%; width: 100%">
         <span>
-            <img id="profile-pic-view" src="../resources/example-profile.jpg" alt="default">
+            <?php
+
+                $link = $_SESSION['image'];
+                echo "<img id='profile-pic-view' src=$link alt='default'>";
+
+            ?>
         </span>
 
         <!-- php echo the appropriate data from the session cache here -->
         <span style="margin-top: 30px">
-            <h1>USERNAME</h1>
-            <h1>ACCOUNT TYPE </h1>
+            <?php
+            $name = $_SESSION['username'];
+            echo "<h1>$name</h1>";
+            if($_SESSION['privilege'] == 1) {
+                echo "<h1>Account type: Admin</h1>";
+            }
+            else {
+                echo "<h1>Account type: User</h1>";
+            }
+
+
+             ?>
+
+
 
             <form method="post" action="../backend/change-pfp.php">
                 <input type="url" name="image-link" placeholder="Image link">
