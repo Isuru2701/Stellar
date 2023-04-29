@@ -91,7 +91,7 @@ function usernameExists($conn, $username, $email)
 
 function createUser($conn, $username, $email, $password)
 {
-     $sql = "INSERT INTO users (userName, userEmail, userPwd) VALUES (?, ?, ?);";
+     $sql = "INSERT INTO users (userName, userEmail, userPwd, privilege) VALUES (?, ?, ?, false);";
      $stmt = mysqli_stmt_init($conn);
      if(!mysqli_stmt_prepare($stmt, $sql)){
        header("location:Signup.php?error=stmtfailed");
@@ -102,7 +102,8 @@ function createUser($conn, $username, $email, $password)
      mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedpwd);
      mysqli_stmt_execute($stmt);
      mysqli_stmt_close($stmt);
-     header("location:Signup.php?error=none");
+    header("location:index.php");
+
     exit();
 
 }
