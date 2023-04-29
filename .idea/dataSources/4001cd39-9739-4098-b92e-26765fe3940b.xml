@@ -1311,7 +1311,7 @@
     </column>
     <column id="373" parent="346" name="image_link">
       <DasType>varchar(255)|0s</DasType>
-      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;https://cdn.discordapp.com/attachments/1101814361812643870/1101815533134938204/default-profile-pic.png&apos;</DefaultExpression>
       <Position>6</Position>
     </column>
     <index id="374" parent="346" name="PRIMARY">

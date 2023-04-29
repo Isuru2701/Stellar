@@ -33,4 +33,4 @@ CREATE TABLE `events` (
 alter table events add column `authorId` int(11) NOT NULL references `users`(`userId`);
 alter table blog_posts add column `authorId` int(11) NOT NULL references `users`(`userId`);
 alter table users add column privilege boolean not null;
-alter table users add column image_link varchar(255) not null;
+alter table users add column image_link varchar(255);
