@@ -49,7 +49,7 @@
                 //fetch all the entries from the db and display them here
 
                 include 'database.php';
-                $sql = "SELECT blog_posts.*, users.userName AS author FROM blog_posts inner join users on blog_posts.authorId = users.userId";
+                $sql = "SELECT blog_posts.*, users.userName AS author FROM blog_posts inner join users on blog_posts.authorId = users.userId ORDER BY blog_posts.id DESC";
 
                 $result = mysqli_query($conn, $sql);
                 if (mysqli_num_rows($result) > 0) {
@@ -61,13 +61,13 @@
 
                         if(isset($_SESSION['privilege']) && $_SESSION['privilege'] == 1) {
                             echo '<div class="admin-only">';
-                            echo '<button class="edit"><img src="../resources/edit-btn.svg" alt="edit" width="40%"></button>';
-                            echo '<button class="delete"><img src="../resources/delete-btn.svg" alt="edit" width="40%"></button>';
+                            echo '<a class="edit" href="update.php?id='. $row['id'] .'"><img src="../resources/edit-btn.svg" alt="edit" width="7%"></a>';
+                            echo '<a class="delete" href="delete.php?id='. $row['id'] .'"> <img src="../resources/delete-btn.svg" alt="edit" width="7%"></a>';
                             echo '</div>';
                         }
 
                         echo '<div class="info-bar">By ' . $row['author'] . '</div>';
-                        echo '<div class="content">' . substr($row['content'], 0, 209) . '</div>';
+                        echo '<div class="content">' . substr($row['content'], 0, 350) . '</div>';
                         echo '</div>';
 
                     }

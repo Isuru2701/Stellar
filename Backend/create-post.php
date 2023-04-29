@@ -19,7 +19,7 @@ if(isset($_POST['submit'])) {
 
     $stmt->close();
     $conn->close();
-    header("location: ../pages/create.php?success=1");
+    header("location: ../pages/forum.php");
     exit();
 
 }
