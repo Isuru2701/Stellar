@@ -1,8 +1,8 @@
-<?php
+<?php       //Change connection string
 $servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "database_name";
+$username = "root";
+$password = "";
+$dbname = "mwd";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check for form submission
