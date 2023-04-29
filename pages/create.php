@@ -14,13 +14,21 @@
 <?php include 'header.php';?>
   <br>
 
+    <?php
+        if(isset($_GET['success'])) {
+            echo "<div class='success'>Your post has been created!</div>";
+        }
+        else if(isset($_GET['error'])) {
+            echo "<div class='error'>Something went wrong!</div>";
+        }
+    ?>
 
-    <form method="POST" src="" action="../backend/create-post.php" method="post" enctype="multipart/form-data">
+    <form method="POST" action="../backend/create-post.php" enctype="multipart/form-data">
         <input type="text" name="title" placeholder="Blog title" required><br>
         <input type="text" placeholder="image link" name="image" required><br>
         <textarea name="content" id="content" cols="100" rows="10" placeholder="Write here!"  required></textarea><br>
 
-        <div id="error">If any error occurs, use this div to display it!, otherwise display nothing</div>
+
 
         <input id="submit" type="submit" name="submit" value="Upload">
 
