@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 if(isset($_POST['Submit'])) {
 
     if(empty('node') || empty('date') || empty ('link')) {
@@ -32,7 +32,7 @@ function addToDb($title, $date, $link) {
     $stmt->close();
     $con->close();
 
-    header("location:../pages/timeline.php");
+    header("location:../pages/timeline.php?success=1");
     exit();
 
 }

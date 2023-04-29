@@ -11,6 +11,13 @@
     <?php include 'header.php' ?>
 
     <!--TODO: add a form to add a node-->
+    <?php
+    if(isset($_GET['success'])) {
+        echo "<div class='title'>Event successfully added.</div>";
+    }
+
+    ?>
+
     <div style="width:100%; margin-bottom:5%">
     <form action="../backend/create-event.php" method="post" id="admin-only">
 
@@ -24,7 +31,32 @@
     <!--container div-->
     <div id="container">
     </div>
-    <script src="../js/timeline.js"></script>
-    
+    <?php
+
+//    <div class='node'>
+//    <div class='circle'>
+//        <img src='img.png'/>
+//    </div>
+//    <p class='title'>title</p>
+//</div>
+
+    include 'database.php';
+
+    $sql = "SELECT * FROM events ORDER BY date DESC";
+    $result = mysqli_query($conn, $sql);
+
+    if($result) {
+        while($row = mysqli_fetch_assoc($result)) {
+            echo "<div class='node'>";
+            echo "<img class='circle' src='" . $row['image_link']."'/>";
+            echo "<p class='title'>". $row['title'] ."</p>";
+            echo "<p class='title'>". "| " . $row['date'] ."</p>";
+            echo "</div>";
+        }
+    }
+
+    ?>
+
+
     </body>
 </html>
