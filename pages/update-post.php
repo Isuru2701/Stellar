@@ -17,11 +17,26 @@
 
 
 <form method="POST" enctype="multipart/form-data">
-    <input type="text" name="title" placeholder="Blog title" required><br>
-    <input type="text" placeholder="image link" name="image" required><br>
-    <textarea name="content" id="content" cols="100" rows="10" placeholder="Write here!"  required></textarea><br>
 
-    <div id="error">If any error occurs, use this div to display it!, otherwise display nothing</div>
+    <?php
+        $servername = "localhost";
+        $dbUsername = "root";
+        $dbPassword = "";
+        $dbName = "mwd";
+        $conn = new mysqli($servername, $dbUsername, $dbPassword, $dbName);
+
+        $sql = "select * from blog_posts where id =" . $_GET['id']. ";";;
+
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $row = $result->fetch_assoc();
+
+        echo '<input type="text" name="title" placeholder="Blog title" value="'. $row['title'] .'" required><br>';
+        echo '<input type="text" placeholder="image link" name="image" value="'. $row['image_link'] .'" required><br>';
+        echo '<textarea name="content" id="content" cols="100" rows="10" placeholder="Write here!"  required>'.$row['content'].'</textarea><br>';
+
+        ?>
 
     <input id="submit" type="submit" name="submit" value="Update">
 
