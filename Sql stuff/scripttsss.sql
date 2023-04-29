@@ -17,3 +17,13 @@ CREATE TABLE `blog_posts` (
   `content` text NOT NULL,
   PRIMARY KEY(`id`)
 );
+
+-- table for storing the upcoming events in timeline.php
+-- make sure to sort in ascending/descending order of date as appropriate
+CREATE TABLE `events` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `title` VARCHAR(255) NOT NULL,
+    `date` DATE NOT NULL,
+    `image_link` VARCHAR(255),
+    PRIMARY KEY (`id`)
+);
