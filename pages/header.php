@@ -27,7 +27,7 @@ if (isset($_SESSION["username"]))
 {
     echo '<div style="display:flex">';
     echo '<img class="pfp" src="../resources/example-profile.jpg" alt="profile-pic"/>';
-    echo '<div id="profile">UserName <br>';
+    echo '<div id="profile"><a href="account.php">UserName</a><br>';
     echo '<a href="logout.php" id="logout"> Logout</a>';
     echo '</div>';
     echo '</div>';

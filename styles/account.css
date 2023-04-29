@@ -36,3 +36,8 @@ a:hover {
     margin-left: 30px;
     margin-top: 40px;
 }
+
+input[type='submit']:active {
+    color: #191919;
+    background: white;
+}
