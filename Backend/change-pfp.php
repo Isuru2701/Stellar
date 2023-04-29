@@ -1,31 +1,26 @@
 <?php
 
-$servername = "localhost";
+session_start();
+$server = "localhost";
 $username = "root";
 $password = "";
 $dbname = "mwd";
-$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check for form submission
-if (isset($_POST['submit']) && isset($_SESSION['username'])) {
-    // Get form data
-    $image_link = $_POST['image_link'];
+if(isset($_POST['submit'])) {
+    $link = trim($_POST['image-link']);
+    echo $_SESSION['userid'];
+    $id = $_SESSION['userid'];
 
+//    $conn = new mysqli($server, $username, $password, $dbname);
+//
+//    $stmt = $conn->prepare("UPDATE users SET image_link = ? WHERE userId = ?");
+//    $stmt->bind_param("si", $link, $id);
+//    $stmt->execute();
+//    $stmt->close();
+//    $conn->close();
 
-    //check if link is an image link
-    $pattern = '/\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|]/i';
-    if (!preg_match($pattern, $image_link)) {
-        echo "Invalid image link";
-        exit();
-    }
-    $sql = "";
-    if ($conn->query($sql) === TRUE) {
-        echo "Post added successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
+    $_SESSION['image'] = $link;
 
-    header("Location: account.php?=update_success");
+//    header("Location: ../pages/account.php?success=profilepicturechanged");
+    exit();
 }
-$conn->close();
-?>

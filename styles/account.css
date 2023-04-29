@@ -12,9 +12,8 @@ body, html {
 
 }
 
-h1 {
+h1, h6 {
     color: #ffffff;
-    font-size: 2em;
     font-weight: bold;
     font-style: normal;
     margin-left: 25%;

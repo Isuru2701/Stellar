@@ -29,25 +29,29 @@
         <span style="margin-top: 30px">
             <?php
             $name = $_SESSION['username'];
+            $id = $_SESSION['userid'];
             echo "<h1>$name</h1>";
             if($_SESSION['privilege'] == 1) {
-                echo "<h1>Account type: Admin</h1>";
+                echo "<h1>Admin</h1>";
             }
             else {
-                echo "<h1>Account type: User</h1>";
+                echo "<h1>Standard User</h1>";
             }
 
+            echo "<h6>Account ID: $id</h6>";
 
              ?>
 
 
 
             <form method="post" action="../backend/change-pfp.php">
-                <input type="url" name="image-link" placeholder="Image link">
+                <input type="url" name="image-link" placeholder="Image link" required>
                 <input type="submit" name="submit" value="Change profile picture">
             </form>
         </span>
     </div>
+
+
 
 </body>
 </html>
