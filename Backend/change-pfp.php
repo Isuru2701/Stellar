@@ -14,6 +14,10 @@ if(isset($_POST['submit'])) {
 
     $conn = new mysqli($server, $username, $password, $dbname);
 
+    if (!preg_match('/\.(jpg|jpeg|png|gif)$/i', $link)) {
+        header("location:../pages/account.php?error=1");
+        exit();
+    }
     $stmt = $conn->prepare("UPDATE users SET image_link = ? WHERE userId = ?");
     $stmt->bind_param("si", $link, $id);
     $stmt->execute();

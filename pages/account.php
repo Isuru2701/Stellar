@@ -41,6 +41,9 @@
 
             echo "<h6>Account ID: $id</h6>";
 
+            if(isset($_GET['error']) && $_GET['error'] == 1) {
+                echo "<h6 style='color: red'>Invalid image link</h6>";
+            }
              ?>
 
 
