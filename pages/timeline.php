@@ -15,6 +15,9 @@
     if(isset($_GET['success'])) {
         echo "<div class='title'>Event successfully added.</div>";
     }
+    else if(isset($_GET['error'])) {
+        echo "<div class='title'>Invalid image link.</div>";
+    }
 
     ?>
 
@@ -42,7 +45,7 @@
 
     include 'database.php';
 
-    $sql = "SELECT * FROM events ORDER BY date DESC";
+    $sql = "SELECT * FROM events ORDER BY date ASC";
     $result = mysqli_query($conn, $sql);
 
     if($result) {

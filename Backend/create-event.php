@@ -8,7 +8,7 @@ if(isset($_POST['Submit'])) {
     }
 
     if (!preg_match('/\.(jpg|jpeg|png|gif)$/i', $_POST['link'])) {
-        echo "<div class='title'>The link is not an image link.</div>";
+        header("location:../pages/timeline.php?error=1");
         exit();
     }
 

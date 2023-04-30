@@ -85,6 +85,7 @@ if (isset($id))
     if ($conn->query($sql) === TRUE) {
         // Success
         echo "Post updated successfully";
+        header("Location: ../pages/forum.php");
     } else {
         // Error
         echo "Error: " . $sql . "<br>" . $conn->error;
