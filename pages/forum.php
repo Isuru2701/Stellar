@@ -63,7 +63,7 @@
                         echo '<div class="entry">';
                         echo '<div class="title"><a href="article.php?id=' . $row['id'] . '">' . $row['title'] . '</a></div>';
 
-                        if(isset($_SESSION['privilege']) && $_SESSION['privilege'] == 1) {
+                        if(isset($_SESSION['privilege']) && $_SESSION['privilege'] == 1 || $_SESSION['username'] == $row['author']) {
                             echo '<div class="admin-only">';
                             echo '<a class="edit" href="update-post.php?id='. $row['id'] .'"><img src="../resources/edit-btn.svg" alt="edit" width="7%"></a>';
                             echo '<a class="delete" href="../backend/delete-post.php?id='. $row['id'] .'"> <img src="../resources/delete-btn.svg" alt="edit" width="7%"></a>';
