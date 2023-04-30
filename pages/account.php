@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Account</title>
+    <link rel="icon" href="../resources/favicon.ico" type="image/ico">
     <link rel="stylesheet" href="../styles/create.css">
     <link rel="stylesheet" href="../styles/account.css">
 </head>
