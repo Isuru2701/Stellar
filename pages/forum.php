@@ -21,6 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Forum</title>
+    <link rel="icon" href="../resources/favicon.ico" type="image/ico">
     <link rel="stylesheet" href="../styles/forum.css">
 
     <!--particle library-->

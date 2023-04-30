@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
- 
+    <link rel="icon" href="../resources/favicon.ico" type="image/ico">
     <link rel="stylesheet" href="../styles/timeline.css">
     <title>Timeline</title>
 </head>

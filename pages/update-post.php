@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/forum.css">
     <link rel="stylesheet" href="../styles/create.css">
+    <link rel="icon" href="../resources/favicon.ico" type="image/ico">
 
     <title>Create a blogpost</title>
 </head>
