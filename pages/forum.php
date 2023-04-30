@@ -39,9 +39,12 @@
 
     <?php include 'header.php';?>
     <br>
-    <a href="create.php" id="add-post">
-        create new post &nbsp; + 
-    </a>
+    <?php
+        if(isset($_SESSION['userid'])) {
+            echo '<a href="create.php" id="add-post">create new post &nbsp; +</a>';
+
+        }
+    ?>
 
     <!--contains all the entries within-->
         <div id="container">

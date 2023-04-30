@@ -10,7 +10,7 @@
 
     <?php include 'header.php' ?>
 
-    <!--TODO: add a form to add a node-->
+    <!--TODO: add a form to add a node: done-->
     <?php
     if(isset($_GET['success'])) {
         echo "<div class='title'>Event successfully added.</div>";
