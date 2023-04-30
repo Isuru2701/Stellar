@@ -51,19 +51,22 @@
     include 'database.php';
 
     $post_id = $_GET['id'];
-    $sql = "SELECT * FROM blog_posts WHERE id = $post_id";
+    $sql = "SELECT blog_posts.*, users.userName AS author, users.image_link AS picture FROM blog_posts INNER JOIN users ON authorId=userId WHERE id = $post_id";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
 
     // Display the blog post content and image on the web page
     echo "<br>";
     echo "<div id='title'>" . $row['title'] . "</div>";
+    echo "<div class='info-bar' style='font-size: 30px'>". "<img src=". $row['picture'] ." alt='profile-pic' width='50px'> &nbsp;" . $row['author'] . "</div>";
     echo "<br>";
     echo "<div id='cover-image'> <img src='". $row['image_link'] . "' alt='Blog post image' width=70%> </div>";
     echo "<div class='post'>" . nl2br($row['content']) . "</div>";
 
 
     ?>
+    <a href="forum.php" id="return">Return</a>
+
     <hr>
 
     

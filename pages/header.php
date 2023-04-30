@@ -37,8 +37,11 @@ if (isset($_SESSION["username"]))
 }
 else
 {
+    echo '<div id="login">';
     echo '<a id="Signup" href="Signup.php" target="_top" style="margin-top: 15%">Sign up</a>';
+    echo '<br>';
     echo '<a id="Login" href="index.php" target="_top" style="margin-top: 15%">Login</a>';
+    echo '</div>';
 }
 
 

@@ -7,6 +7,8 @@
 	
 }
 
+
+
 form {
     margin:20px;
 
@@ -26,6 +28,11 @@ textarea {
     margin-left: 5%;
     font-size: 50px;
     font-weight: bold;
+}
+
+.info-bar {
+    margin: 10px;
+
 }
 
 .post {
@@ -100,4 +107,24 @@ textarea {
 .add-comment:active {
     color: white;
     background-color: purple;
+}
+
+#return {
+    margin-top: 30px;
+    margin-left: 200px;
+    border: #6699cc;
+    background-color: transparent;
+    color:white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    padding: 10px;
+    width: 12%;
+}
+
+#return:active {
+    background-color: #6699cc;
 }

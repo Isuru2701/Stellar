@@ -60,6 +60,14 @@ a:hover {
      font-weight:lighter;
 }
 
+#login {
+    width: 100%;
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 2%;
+    padding-left: 10px;
+}
+
 #logout:active {
     font-size: small;
     font-style:normal; 

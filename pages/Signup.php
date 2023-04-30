@@ -56,7 +56,7 @@
                 echo "<h4>Choose a proper email!</h4>";
               }
               else if($_GET["error"] == "incorrectpassword"){
-                echo "<h4>Passwords dont match my guy!</h4>";
+                echo "<h4>Passwords don't match</h4>";
               }
               else if($_GET["error"] == "usernametaken"){
                 echo "<h4>Username is already taken!</h4>";
