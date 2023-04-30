@@ -50,9 +50,9 @@
 		
 
 		<div class="social-media">
-			<a href="#"><i class='bx bxl-google' ></i></a>
+			<a href="https://www.nasa.gov/" target="_blank"><i class='bx bxl-google' ></i></a>
 			<a href="https://github.com/Isuru2701/Stellar" target="_blank"><i class='bx bxl-github' ></i></a>
-			<a href="#"><i class='bx bxl-instagram' ></i></a>	
+			<a href="https://www.instagram.com/nasa/?hl=en" target="_blank"><i class='bx bxl-instagram' ></i></a>
 		</div>
 
 	</form>

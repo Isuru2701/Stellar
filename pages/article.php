@@ -68,8 +68,6 @@
     ?>
     <a href="forum.php" id="return">Return</a>
 
-    <hr>
-
     
 </body>
 </html>
