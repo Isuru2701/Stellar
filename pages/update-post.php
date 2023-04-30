@@ -37,6 +37,8 @@
         echo '<input type="text" placeholder="image link" name="image" value="'. $row['image_link'] .'" required><br>';
         echo '<textarea name="content" id="content" cols="100" rows="10" placeholder="Write here!"  required>'.$row['content'].'</textarea><br>';
 
+        $stmt->close();
+        $conn->close();
         ?>
 
     <input id="submit" type="submit" name="submit" value="Update">
@@ -82,20 +84,18 @@ if (!preg_match($pattern, $image_link)) {
 if (isset($id))
 {
     // Update post in database
-    $sql = "UPDATE blog_posts SET title='$title', image_link='$image_link', content='$content' WHERE id='$id'";
-    if ($conn->query($sql) === TRUE) {
-        // Success
-        echo "Post updated successfully";
-        header("Location: ../pages/forum.php");
-    } else {
-        // Error
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
+    $sql = "UPDATE blog_posts SET title= ?, image_link= ? , content= ? WHERE id= ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ssss", $title, $image_link, $content, $id);
+    $stmt->execute();
+    $stmt->close();
+    // Close database connection
+    $conn->close();
+    exit();
 }
 
 
-// Close database connection
-$conn->close();
+
 ?>
 
 
