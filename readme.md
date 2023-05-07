@@ -1,18 +1,13 @@
 # A space blog site.
 
 
-## features to be implemented:
+## features:
 
 ### primary
 - home
 - account system (login/signup)
 - timeline
 - forum
-
-### secondary
-- quizzes
-- chatbot
-- newsletter
 
 ## The Database
 - user info (Users table)
